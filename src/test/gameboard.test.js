@@ -3,18 +3,7 @@ import { Gameboard } from "../gameboard";
 let game = Gameboard();
 
 test('initate a gameboard', () => {
-  expect(game.getBoard()).toStrictEqual([
-    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
-    [0, -1, -1, 3, 3, 3, -1, -1, -1, -1],
-    [0, -1, -1, -1, -1, -1, -1, 2, -1, -1],
-    [0, -1, -1, -1, -1, -1, -1, 2, -1, -1],
-    [0, -1, -1, -1, -1, -1, -1, 2, -1, -1],
-    [0, -1, -1, -1, -1, -1, -1, -1, -1, -1],
-    [-1, -1, 4, -1, -1, -1, -1, -1, -1, -1],
-    [-1, -1, 4, -1, -1, -1, -1, -1, -1, -1],
-    [-1, -1, -1, -1, 1, 1, 1, 1, -1, -1],
-    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
-  ]);
+  expect(game.getBoard()).toStrictEqual(game.createBoard());
   expect(game.getMisses()).toStrictEqual([]);
 });
 

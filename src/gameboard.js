@@ -19,7 +19,6 @@ const Gameboard = (array = null) => {
       [-1, -1, -1, -1, 1, 1, 1, 1, -1, -1],
       [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
     ];
-
   };
 
   const receiveAttack = (attack) => {
@@ -50,7 +49,7 @@ const Gameboard = (array = null) => {
   const getShips = () => ships;
   const getBoard = () => board;
 
-  return { receiveAttack, isOver, getHits, getMisses, getShips, getBoard };
+  return { createBoard, receiveAttack, isOver, getHits, getMisses, getShips, getBoard };
 };
 
 export { Gameboard };
