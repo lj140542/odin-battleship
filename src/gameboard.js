@@ -22,7 +22,9 @@ const Gameboard = (array = null) => {
 
   };
 
-  const receiveAttack = (CoordX, CoordY) => {
+  const receiveAttack = (attack) => {
+    let CoordX = attack[0];
+    let CoordY = attack[1];
     let isHit = (board[CoordX][CoordY] > -1);
 
     if (isHit) {
