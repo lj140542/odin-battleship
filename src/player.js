@@ -1,7 +1,7 @@
 import { Gameboard } from './gameboard';
 
-const Player = (name) => {
-  let board = Gameboard();
+const Player = (name, array = null) => {
+  let board = Gameboard(array);
 
   const generateAttack = (opponentBoard) => {
     let guess = [Math.floor(Math.random() * 10), Math.floor(Math.random() * 10)];
