@@ -41,5 +41,5 @@ test('play until the CPU wins the game', () => {
   cont.addPlayer('Jack', defaultGameboardDisplay);
   expect(() => {
     while (!cont.turnPlayed([1, 0])) { }
-  }).not.toThrow();
+  }).toThrow("location is not defined"); // because we refresh the window at the end
 });
